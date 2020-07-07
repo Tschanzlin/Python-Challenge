@@ -18,19 +18,13 @@ with open (input_path) as csvfile:
     # Define variables and set inital values
     Totcount = 0
     Khancount = 0
-    Khanpcg = ()
     Corcount = 0
-    Corpcg = ()
     Licount = 0
-    Lipcg = ()
     Toolcount = 0
-    Toolpcg = ()
-    Winval = ()
-    Winner = ()
-
+    
     for row in csvreader:
 
-        # Calculate total votes cast and votes for each candidate
+            
         Totcount = Totcount +1
 
         if row[2] == "Khan":

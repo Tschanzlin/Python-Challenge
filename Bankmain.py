@@ -26,9 +26,7 @@ with open (input_path) as csvfile:
     FirstProfit = 0
     SumChgProfit = 0
     MaxIncr = 0
-    MaxMonth = ()
     MaxDecr = 0
-    MinMonth = ()
     rowcount = 0
     
 
@@ -62,7 +60,7 @@ with open (input_path) as csvfile:
     AvgProfit = round((SumChgProfit - FirstProfit) / (TotMonths -1), 2)
 
 # Set path to write data file
-output_path = os.path.join (".git", "PyBank", "Resources", "reuslt.csv")
+output_path = os.path.join (".git", "PyBank", "Resources", "result.csv")
 
 # open output file and write ouput
 with open (output_path, "w") as outputcsv:
